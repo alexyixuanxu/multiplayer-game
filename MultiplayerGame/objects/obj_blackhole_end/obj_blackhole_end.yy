@@ -1,24 +1,15 @@
 {
-    "id": "c1832808-5fb1-4768-bb44-4672e6618b95",
+    "id": "02926398-93a4-4a3a-b9b3-bfd7e6c0661e",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_GUI",
+    "name": "obj_blackhole_end",
     "eventList": [
-        {
-            "id": "f00e4351-6e49-4699-913e-2c57bb587884",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 64,
-            "eventtype": 8,
-            "m_owner": "c1832808-5fb1-4768-bb44-4672e6618b95"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": true,
+    "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "4d5b63a2-91f0-4a2d-8387-0ff237251ade",
     "visible": true
 }
