@@ -3,7 +3,7 @@
 
 // the walls block player
 // check four sides of wall
-
+/*
 // up
 if collision_line(x-16, y-16, x+16, y-16, obj_player, false, false){
 	obj_player.y = y-32
@@ -20,3 +20,4 @@ else if collision_line(x-16, y-16, x-16, y+16, obj_player, false, false){
 else if collision_line(x+16, y-16, x+16, y+16, obj_player, false, false){
 	obj_player.x = x+32
 }
+*/

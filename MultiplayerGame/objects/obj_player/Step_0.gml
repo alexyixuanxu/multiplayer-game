@@ -23,4 +23,29 @@ if collision_circle(x, y, 16, obj_blackhole, false, false){
 	y = obj_blackhole_end.y
 }
 
+/*
+// check collision with wall
+// up
+if collision_line(x-16, y-16, x+16, y-16, obj_wall, false, false){
+	obj_player.y = y-32
+}
+// down
+else if collision_line(x-16, y+16, x+16, y+16, obj_wall, false, false){
+	obj_player.y = y+32
+}
+// left
+else if collision_line(x-16, y-16, x-16, y+16, obj_wall, false, false){
+	obj_player.x = x-32
+}
+// right
+else if collision_line(x+16, y-16, x+16, y+16, obj_wall, false, false){
+	obj_player.x = x+32
+}
+*/
+
+if collision_rectangle(x-16, y-16, x+16, y+16, obj_wall, false, false){
+	x = xprevious
+	y = yprevious
+}
+
 
