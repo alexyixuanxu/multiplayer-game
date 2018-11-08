@@ -64,16 +64,43 @@ else if collision_line(x+16, y-16, x+16, y+16, obj_wall, false, false){
 */
 
 // the wall stuff
+/*
 if collision_rectangle(x-16, y-16, x+16, y+16, obj_wall, false, false){
 	x = xprevious
 	y = yprevious
 }
+*/
+
 
 //////////////////////// pick up bullets /////////////////////////////////
 near_bullet = instance_nearest(x, y, obj_bullet)
 if collision_rectangle(x-16, y-16, x+16, y+16, obj_bullet, false, false){
 	instance_destroy(near_bullet)
 	global.bullet += 1
+}
+////////////////////// shooting bullets //////////////////////////////////
+if keyboard_check(vk_up)
+or keyboard_check(vk_down)
+or keyboard_check(ord("A"))
+or keyboard_check(ord("D")){
+	if global.bullet > 0{
+		bullet = instance_create_depth(x,y,0,obj_bullet_shoot)
+		global.bullet -= 1
+	}
+}
+
+if keyboard_check(vk_up){
+	bullet.yspd = -10
+}
+else if keyboard_check(vk_down){
+	bullet.yspd = 10
+}
+
+if keyboard_check(ord("A")){
+	bullet.xspd = -10
+}
+else if keyboard_check(ord("D")){
+	bullet.xspd = 10
 }
 
 /////////////////////// pick up coins ////////////////////////////////////
