@@ -3,20 +3,32 @@
 
 image_speed = 0
 
-// up and dowm
+// up and down
+
 if keyboard_check(ord("W")){
-	y-=playerSpeed
+	if !place_meeting(x, y-8, obj_wall){
+		y-=playerSpeed
+	}
 }
 else if keyboard_check(ord("S")){
-	y+=playerSpeed
+	if !place_meeting(x, y+8, obj_wall){
+		y+=playerSpeed
+	}
 }
+
+
 // left and right
 if keyboard_check(vk_left){
-	x-=playerSpeed
+	if !place_meeting(x-8, y, obj_wall){
+		x-=playerSpeed
+	}
 }
 else if keyboard_check(vk_right){
-	x+=playerSpeed
+	if !place_meeting(x+8, y, obj_wall){
+		x+=playerSpeed
+	}
 }
+
 
 // show sprites!
 // if both player are pressing, purple
@@ -71,7 +83,6 @@ if collision_rectangle(x-16, y-16, x+16, y+16, obj_wall, false, false){
 }
 */
 
-
 //////////////////////// pick up bullets /////////////////////////////////
 near_bullet = instance_nearest(x, y, obj_bullet)
 if collision_rectangle(x-16, y-16, x+16, y+16, obj_bullet, false, false){
@@ -86,22 +97,23 @@ or keyboard_check(ord("D")){
 	if global.bullet > 0{
 		bullet = instance_create_depth(x,y,0,obj_bullet_shoot)
 		global.bullet -= 1
+		if keyboard_check(vk_up){
+			bullet.yspd = -10
+		}
+		else if keyboard_check(vk_down){
+			bullet.yspd = 10
+		}
+
+		if keyboard_check(ord("A")){
+			bullet.xspd = -10
+		}
+		else if keyboard_check(ord("D")){
+			bullet.xspd = 10
+		}
 	}
 }
 
-if keyboard_check(vk_up){
-	bullet.yspd = -10
-}
-else if keyboard_check(vk_down){
-	bullet.yspd = 10
-}
 
-if keyboard_check(ord("A")){
-	bullet.xspd = -10
-}
-else if keyboard_check(ord("D")){
-	bullet.xspd = 10
-}
 
 /////////////////////// pick up coins ////////////////////////////////////
 near_coin = instance_nearest(x, y, obj_coin)
