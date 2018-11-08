@@ -87,11 +87,11 @@
             }
         },
         {
-            "Key": "20558848-dd46-43ab-977e-16ca968422e8",
+            "Key": "24435ec6-77ae-489f-bd73-1e438eee3f6f",
             "Value": {
-                "id": "7283bbff-ca55-4ba6-aa59-fff84a6a1d57",
-                "resourcePath": "sprites\\spr_player\\spr_player.yy",
-                "resourceType": "GMSprite"
+                "id": "641c2235-8492-4bf7-8bf7-cbfeba1e6323",
+                "resourcePath": "views\\24435ec6-77ae-489f-bd73-1e438eee3f6f.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -236,6 +236,14 @@
                 "id": "a591a529-5c85-4b31-9d6c-6dc8d5f62545",
                 "resourcePath": "views\\767fa868-2774-4ff3-9777-90801a8b5789.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7d27d3ba-caeb-42f9-b637-cdd054634771",
+            "Value": {
+                "id": "41407a43-2e31-4d60-a6f6-05da12d1cecb",
+                "resourcePath": "sprites\\spr_players\\spr_players.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -447,6 +455,14 @@
             }
         },
         {
+            "Key": "e4727855-97d9-48a9-8bb2-ca7551ab21c7",
+            "Value": {
+                "id": "8d42e464-ae18-4328-aabd-15bd5c5838cb",
+                "resourcePath": "sprites\\spr_player1\\spr_player1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f2abce91-9362-4008-aab7-540f11037f06",
             "Value": {
                 "id": "23f8868f-2509-472b-b750-74f9b394faf3",
@@ -468,6 +484,14 @@
                 "id": "5483da91-6d3f-45c7-8814-3ac13d9a744b",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f47d3bc6-d845-44df-ac28-0873bd56e3cf",
+            "Value": {
+                "id": "f162fa04-93a9-4dbb-81dc-e5e900aff64d",
+                "resourcePath": "sprites\\spr_player2\\spr_player2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
