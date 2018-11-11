@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+
+
 // up and dowm
 if keyboard_check(ord("W")){
 	y-=playerSpeed

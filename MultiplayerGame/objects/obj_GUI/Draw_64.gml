@@ -10,7 +10,8 @@ if room == rm_start{
 	draw_text(room_width/5, room_height/2+50, "SPACE to play")
 }
 else if room == rm_level1{
-	
+	draw_set_color(c_white)
+	draw_text(50,50,alarm[0])
 }
 
 else if room == rm_end{
