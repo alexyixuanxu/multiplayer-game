@@ -8,12 +8,12 @@ image_speed = 0
 // up and down
 
 if keyboard_check(ord("W")){
-	if !place_meeting(x, y-8, obj_wall){
+	if !place_meeting(x, y-6, obj_wall){
 		y-=playerSpeed
 	}
 }
 else if keyboard_check(ord("S")){
-	if !place_meeting(x, y+8, obj_wall){
+	if !place_meeting(x, y+6, obj_wall){
 		y+=playerSpeed
 	}
 }
@@ -21,12 +21,12 @@ else if keyboard_check(ord("S")){
 
 // left and right
 if keyboard_check(vk_left){
-	if !place_meeting(x-8, y, obj_wall){
+	if !place_meeting(x-6, y, obj_wall){
 		x-=playerSpeed
 	}
 }
 else if keyboard_check(vk_right){
-	if !place_meeting(x+8, y, obj_wall){
+	if !place_meeting(x+6, y, obj_wall){
 		x+=playerSpeed
 	}
 }
