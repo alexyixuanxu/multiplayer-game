@@ -3,7 +3,8 @@
 
 event_inherited()
 
-x += mspd 
+
+x += mspd
 if collision_circle(x,y,20,obj_wall,false,false) {
 	mspd *= -1
 }
