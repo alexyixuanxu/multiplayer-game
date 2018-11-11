@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if collision_circle(x,y,20,obj_player,false,true) {
-	global.player_lives -= 1
-	//set the players pos back to the start of the level 
-	obj.player.x = obj.player.xstart
-	obj.player.y = obj.player.ystart
+if collision_rectangle(x-16, y-16, x+16, y+16, obj_player, false, false) {
+    global.player_lives -= 1
+    //set the players pos back to the start of the level 
+    obj_player.x = obj_player.xstart
+    obj_player.y = obj_player.ystart
 }
