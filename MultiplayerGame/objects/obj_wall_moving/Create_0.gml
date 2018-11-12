@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-spd = 7
+spd = 5
 dir = "ver" // start with which direction
 move_range_up = y-100
 move_range_down = y+100

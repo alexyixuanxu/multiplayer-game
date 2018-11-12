@@ -71,19 +71,19 @@
             }
         },
         {
+            "Key": "18577ec1-e14b-4e4e-82c3-c46527859b00",
+            "Value": {
+                "id": "0e95c07f-dbb8-4e55-8fdd-792367d725a9",
+                "resourcePath": "sounds\\snd_pick_coin\\snd_pick_coin.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "18b8672d-5742-4862-861b-0cb02e34c7cf",
             "Value": {
                 "id": "dac9547e-a3af-4884-9c14-a3b163679ecb",
                 "resourcePath": "objects\\obj_enemy_pathUD\\obj_enemy_pathUD.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "1cb9b33b-aa10-4a7c-aafc-6515b6f3cc77",
-            "Value": {
-                "id": "9de3d32b-b79f-4519-aafc-8194b3aa2bf4",
-                "resourcePath": "sprites\\spr_enemy_tracking\\spr_enemy_tracking.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -132,6 +132,14 @@
                 "id": "b425b900-0fc8-436e-82cd-598dbf383be1",
                 "resourcePath": "objects\\obj_blackhole\\obj_blackhole.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "44821234-6164-419b-95af-22873cccad41",
+            "Value": {
+                "id": "1cf89698-d406-4094-bf94-fb9fce9c69b0",
+                "resourcePath": "sounds\\snd_waste\\snd_waste.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -255,6 +263,14 @@
             }
         },
         {
+            "Key": "80f1e536-5d08-482f-a194-789bb48c7725",
+            "Value": {
+                "id": "f1c31da6-bc24-4603-87e0-544a5f16a85f",
+                "resourcePath": "sounds\\snd_hit\\snd_hit.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "856f6c40-db2e-48a0-b5f2-6727fb831634",
             "Value": {
                 "id": "e886c4b4-0906-4b2a-b8cf-da8a30fc286b",
@@ -276,6 +292,14 @@
                 "id": "d3ca68fb-9383-4eb4-b5f8-202f9271667d",
                 "resourcePath": "objects\\obj_game_manager\\obj_game_manager.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8c718c68-11e0-4dd9-8714-ea22aa5750f7",
+            "Value": {
+                "id": "f44816d1-04f9-4bcf-899c-296d42fa3a07",
+                "resourcePath": "sounds\\snd_die\\snd_die.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -343,11 +367,11 @@
             }
         },
         {
-            "Key": "bce2d459-997a-4b2c-92b5-f8f8e7857127",
+            "Key": "bda1edfd-d182-4548-8845-c47c84784b17",
             "Value": {
-                "id": "4032cc70-b91c-41e3-8298-d234167c3d5f",
-                "resourcePath": "objects\\obj_enemy_tracking\\obj_enemy_tracking.yy",
-                "resourceType": "GMObject"
+                "id": "fe4e4109-3089-4391-95a0-9a82f46c75ae",
+                "resourcePath": "sounds\\snd_shoot\\snd_shoot.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -383,6 +407,14 @@
             }
         },
         {
+            "Key": "c36dbccd-941c-4e38-8f43-b36ef779c9bb",
+            "Value": {
+                "id": "4133ede0-30e8-4a4e-8314-9e681cf06e74",
+                "resourcePath": "sounds\\snd_bgm\\snd_bgm.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "c6603606-648a-4c10-81be-a9cdd8bae052",
             "Value": {
                 "id": "339fe07e-b902-4ac1-8cdd-48d34d549db8",
@@ -404,6 +436,14 @@
                 "id": "15e3d4a6-f65a-4255-9462-987c21e5ed30",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "ce3726eb-c324-4d33-b262-58ebee56b6cd",
+            "Value": {
+                "id": "09c90054-76b4-4782-9910-66432cd25e72",
+                "resourcePath": "sounds\\snd_blackhole\\snd_blackhole.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -516,6 +556,14 @@
                 "id": "6da46b76-a43d-4565-9b8f-8de59369564f",
                 "resourcePath": "objects\\obj_wall\\obj_wall.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fe31456c-0f54-4c3d-a0d9-ff383d960a82",
+            "Value": {
+                "id": "1fc6d10c-ae35-4c9b-93f6-955d809014a1",
+                "resourcePath": "sounds\\snd_pick_bullet\\snd_pick_bullet.yy",
+                "resourceType": "GMSound"
             }
         }
     ],

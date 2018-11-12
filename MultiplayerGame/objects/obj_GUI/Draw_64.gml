@@ -3,33 +3,81 @@
 if room == rm_start{
 	draw_set_color(c_white)
 	draw_set_font(font_title)
-	draw_text(room_width/2, room_height/3, "TITLE")
+	draw_text(300, 70, "Double - Two Souls in One Body")
 	
 	draw_set_font(font_text)
-	draw_text(room_width/5, room_height/2, "Player 1: W & S Player 2: <- & ->")
-	draw_text(room_width/5, room_height/2+50, "SPACE to play")
+	draw_text(135, 175, "Redie, press W and S to move up and down")
+	draw_text(135, 240, "Blu, press LEFT and RIGHT to move...well, you know.")
+	
+	draw_text(100, 305, "Your goal is to reach")
+	draw_text(350, 305, "within time.")
+	
+	draw_text(100, 365, "Remember to avoid blackhole")
+	draw_text(465, 365, "or you may end up who knows where")
+	
+	draw_text(100, 415, "You don't wanna touch those spiky things,")
+	draw_text(570, 415, ", no.")
+	
+	draw_text(100, 465, "And watch out for those crazies...")
+	
+	draw_text(100, 525, "Shoot them moving ones with bullets")
+	draw_text(500, 525, ", if you got any.")
+	
+	draw_text(100, 575, "You can shoot 8 ways! Yayyyy! Just press A/D/UP/DOWN.")
+	
+	draw_text(100, 625, "By the way, you two need to collect your own coins")
+	draw_text(620, 625, "Let's see who's the BETTER one.")
+	
+	draw_text(400, 710, "Press SPACE and let's go!")
 } else if room == rm_level1 
 or room == rm_level2
 or room == rm_level3
 or room == rm_level4
 or room == rm_level5{
-	draw_set_color(c_red)
 	draw_set_font(font_text)
+	draw_set_color(c_purple)
 	// common values
-	draw_text(50, 50, "Lives: "+string(global.player_lives))
-	draw_text(room_width/2, 50, "Bullets: "+string(global.bullet))
+	draw_text(400, 50, "Time Remaining: "+string(global.timer/room_speed))
+	draw_text(250, 50, "Lives: "+string(global.player_lives))
+	draw_text(700, 50, "Bullets: "+string(global.bullet))
 	// for each player
-	draw_text(50, 100, "Player 1 coins: "+string(global.player1_coin))
-	draw_text(room_width/2, 100, "Player 2 coins: "+string(global.player2_coin))
-//>>>>>>> 985f0f59620321e1514010333ba4e24dc1996b74
+	draw_set_color(c_red)
+	draw_text(30, 50, "Redie's coins: "+string(global.player1_coin))
+	draw_set_color(c_blue)
+	draw_text(820, 50, "Blu's coins: "+string(global.player2_coin))
+
+	
+
 }
 
 else if room == rm_end{
 	draw_set_color(c_white)
 	draw_set_font(font_title)
-	if global.lose == true{
-		draw_text(room_width/3, room_height/3-100, "Lost!")
+	if global.player_lives==0{
+		draw_text(100, 80, "You lost!")
 	}
-	draw_text(room_width/3, room_height/3, "The End")
-	draw_text(room_width/3, room_height/3+100, "SPACE to replay")
+	// if remain any life, win!!
+	else{
+		draw_text(100, 80, "You made it!")
+	}
+	
+	draw_text(100, 200, "Let's do some counting...")
+	draw_set_color(c_red)
+	draw_text(100, 280, "Redie, you have "+string(global.player1_coin)+" coins.")
+	draw_set_color(c_blue)
+	draw_text(100, 360, "Blu, you have "+string(global.player2_coin)+" coins.")
+	if global.player1_coin > global.player2_coin{
+		draw_set_color(c_red)
+		draw_text(100, 440, "Redie is clearly superior.")
+	}
+	else if global.player1_coin < global.player2_coin{
+		draw_set_color(c_blue)
+		draw_text(100, 440, "Blu is obviously the better one.")
+	}
+	else{
+		draw_set_color(c_purple)
+		draw_text(100, 440, "You are both equally lame...just kidding!")
+	}
+	draw_set_color(c_white)
+	draw_text(100, 600, "SPACE to go again!")
 }
